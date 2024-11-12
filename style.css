@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative;
+    width: 1000px;
+    height: 500px;
+    border: 2px solid black;
+}
+
+.movable, .movable2, .target {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+
+.movable {
+    background-color: blue;
+    width: 1vw;
+    height: 10vw;
+    top: 0;
+    left: 0;
+}
+.movable2{
+    background-color: blue;
+    width: 1vw;
+    height: 10vw;
+    top: 0;
+    left: 100vw;
+}
+
+.target {
+    background-color: red;
+    border-radius: 100%;
+    top: 90px;
+    left: 90px;
+    
+}
