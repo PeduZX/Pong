@@ -1,10 +1,22 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 100vh;
     margin: 0;
     background-color: #f0f0f0;
+}
+
+h1, h3 {
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
 }
 
 .container {
@@ -12,33 +24,52 @@ body {
     width: 1000px;
     height: 500px;
     border: 2px solid black;
+    margin: 0 auto; 
 }
 
-.movable, .movable2, .target {
+.raquete1, .raquete2, .bola {
     position: absolute;
-    width: 50px;
-    height: 50px;
-}
-
-.movable {
-    background-color: blue;
-    width: 1vw;
+    width: 6vw;
     height: 10vw;
-    top: 0;
-    left: 0;
-}
-.movable2{
-    background-color: blue;
-    width: 1vw;
-    height: 10vw;
-    top: 0;
-    left: 100vw;
-}
-
-.target {
-    background-color: red;
-    border-radius: 100%;
-    top: 90px;
-    left: 90px;
     
+}
+
+.raquete1 {
+    background-image: url("/imgs/rqtBLUE.png");
+    width: 6vw;
+    height: 11vw;
+    background-size: cover;
+}
+
+.raquete2 {
+    background-image: url('./imgs/rqtRED.png');
+    width: 6vw;
+    height: 11vw;
+    float: inline-end;
+    margin-left: -1vw;
+    background-size: cover;
+}
+
+.bola {
+    background-image: url(/imgs/bola.png);
+    background-size: cover;
+    width: 60px;
+    height: 50px; 
+}
+
+#play, #pause {
+    margin-top: 20px;
+    height: 50px;
+    width: 100px;
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 15px;
+}
+
+#play {
+    margin-left: 40vw;
 }
